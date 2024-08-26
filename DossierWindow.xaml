@@ -1,0 +1,26 @@
+﻿<Window x:Class="OPBD.DossierWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OPBD"
+        mc:Ignorable="d" Loaded="Window_Loaded"
+        Title="DossierWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid Name="Dossier" Margin="0,10,0,188" SelectionChanged="Dossier_SelectionChanged"></DataGrid>
+        <Button Content="Удалить" Margin="623,248,10,140" FontSize="16" FontWeight="Black" Click="Button_Click"/>
+        <Button Content="Изменить" Margin="623,298,10,90" FontSize="16" FontWeight="Black" Click="Button_Click_1"/>
+        <Button Content="Добавить" Margin="623,347,10,41" FontSize="16" FontWeight="Black" Click="Button_Click_2"/>
+        <TextBox Name="Num" TextWrapping="Wrap" Margin="27,256,595,140"/>
+
+
+
+        <TextBlock TextWrapping="Wrap" Text="Номер дела" Margin="28,232,594.6,164"/>
+        <TextBlock TextWrapping="Wrap" Text="Номер акта" Margin="27,280,594.6,114" RenderTransformOrigin="0.5,0.5"/>
+        <TextBlock TextWrapping="Wrap" Text="Статус" Margin="28,330,594.6,65"/>
+        <TextBlock TextWrapping="Wrap" Text="Номер обращения" Margin="253,232,368.6,164"/>
+        <ComboBox Name="KAct" HorizontalAlignment="Left" VerticalAlignment="Top" Width="171" Margin="28,306,0,0" Height="19"/>
+        <ComboBox Name="KSt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="171" Margin="28,355,0,0" Height="24"/>
+        <ComboBox Name="KOb" HorizontalAlignment="Left" VerticalAlignment="Top" Width="172" Margin="253,256,0,0" Height="24"/>
+    </Grid>
+</Window>

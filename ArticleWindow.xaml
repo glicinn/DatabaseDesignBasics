@@ -1,0 +1,22 @@
+﻿<Window x:Class="OPBD.ArticleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OPBD"
+        mc:Ignorable="d" Loaded="Window_Loaded"
+        Title="ArticleWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid Name="Article" Margin="0,10,0,188" SelectionChanged="Article_SelectionChanged"></DataGrid>
+        <Button Content="Удалить" Margin="623,248,10,140" FontSize="16" FontWeight="Black" Click="Button_Click"/>
+        <Button Content="Изменить" Margin="623,298,10,90" FontSize="16" FontWeight="Black" Click="Button_Click_1"/>
+        <Button Content="Добавить" Margin="623,347,10,41" FontSize="16" FontWeight="Black" Click="Button_Click_2"/>
+        <TextBox Name="Naz" TextWrapping="Wrap" Margin="36,256,584,140"/>
+        <TextBox Name="Num" TextWrapping="Wrap" Margin="36,306,583.6,90"/>
+        <TextBlock TextWrapping="Wrap" Text="Название" Margin="36,232,583.6,164"/>
+        <TextBlock TextWrapping="Wrap" Text="Номер" Margin="36,280,583.6,114"/>
+        <TextBlock TextWrapping="Wrap" Text="Кодекс" Margin="36,330,583.6,64"/>
+        <ComboBox Name="Kod" HorizontalAlignment="Left" VerticalAlignment="Top" Width="174" Margin="36,361,0,0" Height="40"/>
+
+    </Grid>
+</Window>

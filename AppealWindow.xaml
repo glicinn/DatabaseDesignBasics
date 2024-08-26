@@ -1,0 +1,33 @@
+﻿<Window x:Class="OPBD.AppealWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OPBD"
+        mc:Ignorable="d" Loaded="Window_Loaded"
+        Title="AppealWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid Name="Appeal" Margin="0,10,0,188" SelectionChanged="Appeal_SelectionChanged"></DataGrid>
+        <Button Content="Удалить" Margin="623,248,10,140" FontSize="16" FontWeight="Black" Click="Button_Click"/>
+        <Button Content="Изменить" Margin="623,298,10,90" FontSize="16" FontWeight="Black" Click="Button_Click_1"/>
+        <Button Content="Добавить" Margin="623,347,10,41" FontSize="16" FontWeight="Black" Click="Button_Click_2"/>
+        <TextBox Name="Num" TextWrapping="Wrap" Margin="32,256,555.6,140"/>
+        <TextBox Name="DateF" TextWrapping="Wrap" Margin="31,304,556.6,92"/>
+        <TextBox Name="Opis" TextWrapping="Wrap" Margin="33,347,554.6,49"/>
+
+
+
+
+        <TextBlock TextWrapping="Wrap" Text="Номер" Margin="33,232,556.6,164"/>
+        <TextBlock TextWrapping="Wrap" Text="Дата формирования" Margin="31,280,556.6,116"/>
+        <TextBlock TextWrapping="Wrap" Text="Описание" Margin="33,328,556.6,73"/>
+        <TextBlock TextWrapping="Wrap" Text="Гражданин" Margin="33,371,556.6,29"/>
+        <TextBlock TextWrapping="Wrap" Text="Статья" Margin="265,232,322.6,164"/>
+        <TextBlock TextWrapping="Wrap" Text="Категория" Margin="265,280,322.6,116"/>
+        <TextBlock TextWrapping="Wrap" Text="Сотрудник" Margin="265,328,322.6,73"/>
+        <ComboBox Name="KGr" HorizontalAlignment="Left" VerticalAlignment="Top" Width="206" Margin="31,391,0,0" Height="19"/>
+        <ComboBox Name="KSt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="206" Margin="265,256,0,0" Height="19"/>
+        <ComboBox Name="KKat" HorizontalAlignment="Left" VerticalAlignment="Top" Width="206" Margin="265,304,0,0" Height="24"/>
+        <ComboBox Name="KSot" HorizontalAlignment="Left" VerticalAlignment="Top" Width="206" Margin="265,355,0,0" Height="24"/>
+    </Grid>
+</Window>
